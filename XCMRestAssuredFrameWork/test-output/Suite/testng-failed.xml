@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.xcm.testcases.TC01_GetAllEmployeeData">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="setup"/>
+          <include name="getAllEmployee"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.xcm.testcases.TC01_GetAllEmployeeData -->
+      <class name="com.xcm.testcases.TC05_DeleteEmplyeRecord">
+        <methods>
+          <include name="checkstatusLine"/>
+          <include name="checkStatusCode"/>
+          <include name="setup"/>
+          <include name="checkContentType"/>
+          <include name="deleteEmployee"/>
+          <include name="tearDown"/>
+          <include name="checkResposeBody"/>
+          <include name="checkcontentEncoding"/>
+          <include name="checkserverType"/>
+        </methods>
+      </class> <!-- com.xcm.testcases.TC05_DeleteEmplyeRecord -->
+      <class name="com.xcm.testcases.TC02_GetSingleEmploye">
+        <methods>
+          <include name="getEmployeeData"/>
+          <include name="checkResposeBody"/>
+          <include name="checkserverType"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="checkContentType"/>
+        </methods>
+      </class> <!-- com.xcm.testcases.TC02_GetSingleEmploye -->
+      <class name="com.xcm.testcases.TC03_PostEmployeRecord">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="createEmployee"/>
+          <include name="tearDown"/>
+          <include name="checkcontentEncoding"/>
+          <include name="checkserverType"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.xcm.testcases.TC03_PostEmployeRecord -->
+      <class name="com.xcm.testcases.TC04_PutEmployeRecord">
+        <methods>
+          <include name="checkserverType"/>
+          <include name="checkContentType"/>
+          <include name="checkcontentEncoding"/>
+          <include name="tearDown"/>
+          <include name="updateEmployee"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.xcm.testcases.TC04_PutEmployeRecord -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
